@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import HeaderActorPage from '../../components/HeaderActorPage/HeaderActorPage'
+import HeaderActorsPage from '../../components/HeaderActorsPage/HeaderActorsPage'
 import { Container } from 'react-bootstrap'
 import Actors from '../../components/Actors/Actors';
 import SearchBox from '../../components/SearchBox/SearchBox';
-import './ActorPage.css'
+import './ActorsPage.css'
 import axios from 'axios';
 import ActorModel from '../../model/ActorModel';
 
 
-export default function ActorPage() {
+export default function ActorsPage() {
     const [filterText, setFilterText] = useState("");
     const [sortBy, setSortBy] = useState("fname");
     const [searchText, setSearchText] = useState("")
@@ -80,7 +80,7 @@ export default function ActorPage() {
                 onSearchChange={handleSearchChange}
                 results={results.map(result => result.name)}
                 onResultSelected={addActor} />
-            <HeaderActorPage onFilterChange={filterTextChange} onSortChange={sortByChange} />
+            <HeaderActorsPage onFilterChange={filterTextChange} onSortChange={sortByChange} />
             <Actors filterBy={filterText} sortBy={sortBy} actors={actors} />
         </Container>
     )
