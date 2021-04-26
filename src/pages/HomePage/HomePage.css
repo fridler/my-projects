@@ -1,0 +1,13 @@
+.p-home > img{
+    width: 50%;
+    margin: 0 auto;
+}
+.p-home{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+}
