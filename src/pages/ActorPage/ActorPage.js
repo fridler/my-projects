@@ -17,12 +17,12 @@ export default function ActorPage() {
 
     const pathPre = process.env.PUBLIC_URL;
 
-    useEffect(() => {
-        axios.get(pathPre.concat("/actors.json")).then(res => {
-            const newActors = res.data.map(plainActor => new ActorModel(plainActor));
-            setActors(newActors);
-        });
-    }, []);
+    // useEffect(() => {
+    //     axios.get(pathPre.concat("/actors.json")).then(res => {
+    //         const newActors = res.data.map(plainActor => new ActorModel(plainActor));
+    //         setActors(newActors);
+    //     });
+    // }, []);
 
     function filterTextChange(data) {
         setFilterText(data);
@@ -44,7 +44,7 @@ export default function ActorPage() {
     }
     function addActor(resultIndex) {
         if (actors && !actors.some(el => el.id == results[resultIndex].id)) {
-            const imgURL = "https://image.tmdb.org/t/p/w500/" + results[resultIndex].profile_path;
+            const imgURL = results[resultIndex].profile_path ? "https://image.tmdb.org/t/p/w500/" + results[resultIndex].profile_path : "";
             const fullName = results[resultIndex].name.trim();
             let fname = ""; let lname = "";
             if (fullName) {
@@ -58,14 +58,11 @@ export default function ActorPage() {
                 }
             }
             const searchIndexURL = `https://api.themoviedb.org/3/person/${results[resultIndex].id}?api_key=d5fc0ebcdc97957658216ba08b5e9436`;
-            let bDay = ""; let imdbID = "";
 
             axios.get(searchIndexURL).then(response => {
-                bDay = response.data.birthday;
-                imdbID = response.data.imdb_id;
-                const imdbPath = "https://www.imdb.com/name/" + imdbID;
+
                 setActors(actors.concat(
-                    new ActorModel(fname, lname, response.data.birthday,
+                    new ActorModel(fname, lname, response.data.birthday, response.data.deathday,
                         imgURL, "https://www.imdb.com/name/" + response.data.imdb_id,
                         response.data.id)));
             });
@@ -76,6 +73,7 @@ export default function ActorPage() {
 
     return (
         <Container>
+            <h1 className="p-title">Actors</h1>
             <SearchBox
                 placeHolder="Search Actor..."
                 searchText={searchText}

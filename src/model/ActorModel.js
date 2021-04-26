@@ -1,26 +1,27 @@
 class ActorModel {
-    constructor(plainActor, lname, bday, img, imdb, id) {
+    constructor(plainActor, lname, birthday, deathDay, img, imdb, id) {
         if (typeof plainActor === 'object') {
             this.fname = plainActor.fname;
             this.lname = plainActor.lname;
-            this.bday = plainActor.bday;
+            this.birthday = plainActor.birthday;
+            this.deathDay = plainActor.deathDay;
             this.img = plainActor.img;
             this.imdb = plainActor.imdb;
             this.id = plainActor.id;
         } else {
             this.fname = plainActor;
             this.lname = lname;
-            this.bday = bday;
+            this.birthday = birthday;
+            this.deathDay = deathDay;
             this.img = img;
             this.imdb = imdb;
             this.id = id;
         }
-        this.age = this.getAge(this.bday);
+        this.age = this.getAge(this.birthday, this.deathDay);
     }
 
-    getAge(dateString) {
-
-        const today = new Date();
+    getAge(dateString, deadString) {
+        const today = deadString ? new Date(deadString) : new Date();
         const birthDate = new Date(dateString);
         let age = today.getFullYear() - birthDate.getFullYear();
         const m = today.getMonth() - birthDate.getMonth();
