@@ -1,8 +1,6 @@
 import React from 'react'
 import { Form, ListGroup } from 'react-bootstrap'
 import './SearchBox.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function SearchBox({ placeHolder, searchText, onSearchChange, results, onResultSelected }) {
