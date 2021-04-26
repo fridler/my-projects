@@ -17,12 +17,12 @@ export default function ActorPage() {
 
     const pathPre = process.env.PUBLIC_URL;
 
-    // useEffect(() => {
-    //     axios.get(pathPre.concat("/actors.json")).then(res => {
-    //         const newActors = res.data.map(plainActor => new ActorModel(plainActor));
-    //         setActors(newActors);
-    //     });
-    // }, []);
+    useEffect(() => {
+        axios.get(pathPre.concat("/actors.json")).then(res => {
+            const newActors = res.data.map(plainActor => new ActorModel(plainActor));
+            setActors(newActors);
+        });
+    }, []);
 
     function filterTextChange(data) {
         setFilterText(data);
