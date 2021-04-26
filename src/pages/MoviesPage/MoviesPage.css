@@ -1,3 +1,6 @@
-*{
-    color: white;    
+.p-movie-spinner{
+    color: white;
+}
+.p-movie-results{
+    padding-top: 20px;
 } 
