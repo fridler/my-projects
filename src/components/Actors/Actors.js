@@ -18,7 +18,8 @@ export default function Actors({ filterBy, sortBy, actors }) {
                         return b.age - a.age;
                     case "agea":
                         return a.age - b.age;
-
+                    default:
+                        return -1;
                 }
             })
         }
