@@ -1,5 +1,4 @@
 import React from 'react'
-import { CardGroup, CardDeck } from 'react-bootstrap';
 import ActorCard from '../ActorCard/ActorCard';
 import './Actors.css'
 export default function Actors({ filterBy, sortBy, actors }) {
@@ -24,7 +23,7 @@ export default function Actors({ filterBy, sortBy, actors }) {
             })
         }
         if (actors)
-            actorsCards = actors.map(actor => <ActorCard actor={actor} />);
+            actorsCards = actors.map((actor, index) => <ActorCard key={index} actor={actor} />);
     }
     return (
         <div className="actors-cards">

@@ -1,0 +1,9 @@
+.c-search-box{
+    padding-top: 30px;
+    position: relative;
+}
+.c-result-box{
+    position: absolute;
+    width: 100%;
+    z-index: 10;   
+} 
