@@ -1,12 +1,22 @@
 .c-actor-card{
     margin-bottom: 20px;
+    align-items: center;
 }
 a{
     text-decoration: none !important;
+    text-align: center;
 }
-.actor-c-body{
+
+.card-body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: auto 0;
     align-items: center;
-} 
+}
+.card-text{
+    margin-top: auto;
+}
+.card-img-top{
+    margin-top:10px;
+    border-radius: 50% !important;
