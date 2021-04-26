@@ -1,0 +1,7 @@
+.c-movie-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border:1px solid white;
+    margin: 0;
+} 
