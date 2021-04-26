@@ -1,0 +1,98 @@
+[
+    {
+        "fname": "Tom",
+        "lname": "Cruise",
+        "birthday": "1962/07/03",
+        "img": "https://www.lecturas.com/medio/2018/10/05/tom-cruise_c56207ff_800x1200.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000129/?ref_=nmmi_mi_nm",
+        "id": "500"
+    },
+    {
+        "fname": "Christian",
+        "lname": "Bale",
+        "birthday": "1974/01/30",
+        "img": "https://www.theplace2.ru/cache/archive/christian_bale/img/546425_wayne2-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000288/?ref_=tt_cl_t1",
+        "id": "3894"
+    },
+    {
+        "fname": "Brad",
+        "lname": "Pitt",
+        "birthday": "1963/12/18",
+        "img": "https://www.theplace2.ru/cache/archive/bred_pitt/img/brad_pitt_2-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000093/?ref_=tt_cl_t2",
+        "id": "287"
+    },
+    {
+        "fname": "Uma",
+        "lname": "Thurman",
+        "birthday": "1970/04/29",
+        "img": "https://www.theplace2.ru/cache/archive/uma_thurman/img/Uma_Turman1-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000235/?ref_=tt_cl_t15",
+        "id": "139"
+    },
+    {
+        "fname": "Diane",
+        "lname": "Keaton",
+        "birthday": "1946/01/05",
+        "img": "https://www.kino.dk/sites/default/files/primary-pictures/dianekeaton.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000473/?ref_=tt_cl_t10",
+        "id": "3092"
+    },
+    {
+        "fname": "Tom",
+        "lname": "Hanks",
+        "birthday": "1956/07/09",
+        "img": "https://us.hola.com/imagenes/es/celebrities/2019032122293/tom-hanks-sorpresa-cumpleanos/0-168-324/tom-hanks-1a-a.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000158/?ref_=tt_cl_t1",
+        "id": "31"
+    },
+    {
+        "fname": "Anne",
+        "lname": "Hathaway",
+        "birthday": "1982/11/12",
+        "img": "https://i.pinimg.com/originals/0e/4e/98/0e4e9834f237005d83788861dff0e995.jpg",
+        "imdb": "https://www.imdb.com/name/nm0004266/?ref_=ttfc_fc_cl_t10",
+        "id": "1813"
+    },
+    {
+        "fname": "Cate",
+        "lname": "Blanchett",
+        "birthday": "1969/05/14",
+        "img": "https://i.pinimg.com/originals/ed/a1/36/eda136c1a14124e3bdb7dc504ee2d947.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000949/?ref_=tt_cl_t10",
+        "id": "112"
+    },
+    {
+        "fname": "Jack",
+        "lname": "Nicholson",
+        "birthday": "1937/04/22",
+        "img": "https://amc-theatres-res.cloudinary.com/v1579117330/amc-cdn/production/2/movies/2000/2004/Poster/p_800x1200_One_Flew_Over_The_Cuckoos_Nest_En_113016.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000197/?ref_=tt_ov_st_sm",
+        "id": "514"
+    },
+    {
+        "fname": "Reese",
+        "lname": "Witherspoon",
+        "birthday": "1976/03/22",
+        "img": "https://www.closerweekly.com/wp-content/uploads/2019/09/reese-witherspoon.jpg?w=683&resize=800%2C1200",
+        "imdb": "https://www.imdb.com/name/nm0000702/?ref_=tt_cl_t1",
+        "id": "368"
+    },
+    {
+        "fname": "Nicole",
+        "lname": "Kidman",
+        "birthday": "1967/06/20",
+        "img": "https://imgix.bustle.com/2017/1/30/633038864.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress",
+        "imdb": "https://www.imdb.com/name/nm0000173/?ref_=tt_cl_t2",
+        "id": "2227"
+    },
+    {
+        "fname": "Jude",
+        "lname": "Law",
+        "birthday": "1972/12/29",
+        "img": "https://pbs.twimg.com/media/EMChx-0WwAAeba6.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000179/?ref_=tt_cl_t1",
+        "id": "9642"
+    }
+]
