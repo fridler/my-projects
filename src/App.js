@@ -8,34 +8,21 @@ import MoviesPage from "./pages/MoviesPage/MoviesPage";
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
-
-
   return (
     <div className="App">
-      <NavbarAppComponent />
       <HashRouter>
+        <NavbarAppComponent />
         <Switch>
-          <Route exact path="/actors">
-            <ActorsPage />
-          </Route>
-          <Route exact path="/movies">
-            <MoviesPage />
-          </Route>
-          <Route exact path="/actor/:actorId/movies">
-            <MoviesPage />
-          </Route>
-          <Route exact path="/home">
-            <HomePage />
-          </Route>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/">
-            <NotFoundPage />
-          </Route>
+          <Route exact path="/actors"><ActorsPage /></Route>
+          <Route exact path="/movies"><MoviesPage /></Route>
+          <Route exact path="/actor/:actorId/movies"><MoviesPage /></Route>
+          <Route exact path="/home"><HomePage /></Route>
+          <Route exact path="/"><HomePage /></Route>
+          <Route path="/"><NotFoundPage /></Route>
         </Switch>
       </HashRouter>
     </div>
   );
 }
+
 export default App;
