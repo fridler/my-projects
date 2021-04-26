@@ -1,13 +1,21 @@
-.p-home > img{
-    width: 40%;
-    margin: 0 auto;
-}
+
 .p-home{
     display: flex;
     flex-direction: column;
     color:white;
+    text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-top: 30px;
+    padding: 20px 0;
 }
+.p-home>h6{
+    width: 50%;
+}
+.p-home > .carousel{
+    width: 50% !important;
+}
+.carousel-item>img{
+    width: 50%;
+    height: 50%;
+} 
