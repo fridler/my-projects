@@ -1,17 +1,19 @@
 class ActorModel {
-    constructor(plainActor, lname, bday, img, imdb) {
+    constructor(plainActor, lname, bday, img, imdb, id) {
         if (typeof plainActor === 'object') {
             this.fname = plainActor.fname;
             this.lname = plainActor.lname;
             this.bday = plainActor.bday;
             this.img = plainActor.img;
             this.imdb = plainActor.imdb;
+            this.id = plainActor.id;
         } else {
             this.fname = plainActor;
             this.lname = lname;
             this.bday = bday;
             this.img = img;
             this.imdb = imdb;
+            this.id = id;
         }
         this.age = this.getAge(this.bday);
     }

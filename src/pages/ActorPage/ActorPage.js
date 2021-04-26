@@ -13,16 +13,16 @@ export default function ActorPage() {
     const [sortBy, setSortBy] = useState("fname");
     const [searchText, setSearchText] = useState("")
     const [results, setResults] = useState([]);
-    const [actors, setActors] = useState(null);
+    const [actors, setActors] = useState([]);
 
     const pathPre = process.env.PUBLIC_URL;
 
-    useEffect(() => {
-        axios.get(pathPre.concat("/actors.json")).then(res => {
-            const newActors = res.data.map(plainActor => new ActorModel(plainActor));
-            setActors(newActors);
-        });
-    }, []);
+    // useEffect(() => {
+    //     axios.get(pathPre.concat("/actors.json")).then(res => {
+    //         const newActors = res.data.map(plainActor => new ActorModel(plainActor));
+    //         setActors(newActors);
+    //     });
+    // }, []);
 
     function filterTextChange(data) {
         setFilterText(data);
@@ -43,28 +43,33 @@ export default function ActorPage() {
         }
     }
     function addActor(resultIndex) {
-        const imgURL = "https://image.tmdb.org/t/p/w500/" + results[resultIndex].profile_path;
-        const fullName = results[resultIndex].name.trim();
-        let fname = ""; let lname = "";
-        if (fullName) {
-            const nameArr = fullName.split(' ');
-            if (nameArr.length > 2) {
-                fname = nameArr[0];
-                lname = nameArr.slice(1).join(' ')
-            } else {
-                fname = nameArr[0];
-                lname = nameArr[nameArr.length - 1];
+        if (actors && !actors.some(el => el.id == results[resultIndex].id)) {
+            const imgURL = "https://image.tmdb.org/t/p/w500/" + results[resultIndex].profile_path;
+            const fullName = results[resultIndex].name.trim();
+            let fname = ""; let lname = "";
+            if (fullName) {
+                const nameArr = fullName.split(' ');
+                if (nameArr.length > 2) {
+                    fname = nameArr[0];
+                    lname = nameArr.slice(1).join(' ')
+                } else {
+                    fname = nameArr[0];
+                    lname = nameArr[nameArr.length - 1];
+                }
             }
-        }
-        const searchIndexURL = `https://api.themoviedb.org/3/person/${results[resultIndex].id}?api_key=d5fc0ebcdc97957658216ba08b5e9436`;
-        let bDay = ""; let imdbID = "";
+            const searchIndexURL = `https://api.themoviedb.org/3/person/${results[resultIndex].id}?api_key=d5fc0ebcdc97957658216ba08b5e9436`;
+            let bDay = ""; let imdbID = "";
 
-        axios.get(searchIndexURL).then(response => {
-            bDay = response.data.birthday;
-            imdbID = response.data.imdb_id;
-            const imdbPath = "https://www.imdb.com/name/" + imdbID;
-            setActors(actors.concat(new ActorModel(fname, lname, bDay, imgURL, imdbPath)));
-        });
+            axios.get(searchIndexURL).then(response => {
+                bDay = response.data.birthday;
+                imdbID = response.data.imdb_id;
+                const imdbPath = "https://www.imdb.com/name/" + imdbID;
+                setActors(actors.concat(
+                    new ActorModel(fname, lname, response.data.birthday,
+                        imgURL, "https://www.imdb.com/name/" + response.data.imdb_id,
+                        response.data.id)));
+            });
+        }
         setResults([]);
         setSearchText("");
     }
