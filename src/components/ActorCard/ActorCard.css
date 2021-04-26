@@ -13,6 +13,7 @@ a{
     flex-direction: column;
     margin: auto 0;
     align-items: center;
+    text-align: center;
 }
 .card-text{
     margin-top: auto;
@@ -21,3 +22,8 @@ a{
     margin-top:10px;
     border-radius: 50% !important;
 }
+
+.text-alert{
+    color:red;
+    font-style: italic;
+} 

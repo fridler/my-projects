@@ -12,8 +12,8 @@ export default function ActorCard({ actor }) {
                         {`${actor.fname} ${actor.lname}`}
                     </a>
                 </Card.Title>
-                <Card.Text>
-                    {actor.age}
+                <Card.Text className={actor.deathDay ? "text-alert" : ""}>
+                    {actor.age} {actor.deathDay ? " (deceased)" : ""}
                 </Card.Text>
             </Card.Body>
         </Card>
