@@ -1,17 +1,25 @@
 import React from 'react'
-import { Container, Jumbotron } from 'react-bootstrap'
+import { Card, Container, ListGroup } from 'react-bootstrap'
 import './MovieCard.css'
 export default function MovieCard({ movie }) {
     return (
-        <Container className="c-movie-card row">
-            <img src={movie.posterPath} alt="" className="col-md-4"></img>
-            <div className="col-md-8">
-                <h3>{movie.title}</h3>
-                <h6>Durarion: {movie.runtime}</h6>
-                <h6>Director: {movie.director}</h6>
-                <h6>Stars: {movie.stars}</h6>
-                <h6>Plot: {movie.plot}</h6>
-            </div>
+        <Container className="c-movie-card mb-3">
+            <Card className="c-movie-card-item row g-0">
+                <img src={movie.posterPath} alt="" className="col-md-4" />
+                <Card.Body className="col-md-8 c-movie-card-body">
+                    <Card.Title className="text-center">
+                        {movie.title}
+                    </Card.Title>
+                    <Card.Text className="c-movie-card-text">
+                        <ListGroup variant="flush">
+                            <ListGroup.Item>Durarion (minutes): {movie.runtime}</ListGroup.Item>
+                            <ListGroup.Item>Director: {movie.director}</ListGroup.Item>
+                            <ListGroup.Item>Stars: {movie.stars}</ListGroup.Item>
+                            <ListGroup.Item>Plot: {movie.plot}</ListGroup.Item>
+                        </ListGroup>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
         </Container>
     )
 }

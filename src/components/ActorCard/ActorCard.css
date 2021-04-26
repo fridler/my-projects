@@ -7,7 +7,7 @@ a{
     text-align: center;
 }
 
-.card-body{
+.c-actor-card-body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
