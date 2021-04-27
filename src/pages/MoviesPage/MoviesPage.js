@@ -42,7 +42,8 @@ function MoviesPage() {
             if (actorId) {
                 movieList = movieList.concat(movie);
             } else {
-                movieList = movies.concat(movie);
+                movieList = movieList.concat(movies);
+                movieList.unshift(movie);
             }
             setMovies(movieList);
         });
