@@ -73,7 +73,7 @@ export default function ActorsPage() {
 
     return (
         <Container>
-            <h1 className="p-title">Actors</h1>
+            <h1 className="p-actors">Actors</h1>
             <SearchBox
                 placeHolder="Search Actor..."
                 searchText={searchText}

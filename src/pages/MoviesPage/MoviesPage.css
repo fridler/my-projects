@@ -1,5 +1,12 @@
+.p-movie>h1{
+    color: #032541;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
 .p-movie-spinner{
-    color: white;
+    color: #032541;
 }
 .p-movie-results{
     padding: 20px 0;

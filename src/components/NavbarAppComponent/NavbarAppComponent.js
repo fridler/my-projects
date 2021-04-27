@@ -8,19 +8,17 @@ export default function NavbarAppComponent() {
     const currentPath = usePathName();
 
     return (
-        <Container className="c-navbar">
-            <Navbar bg="white" variant="light">
-                <Navbar.Brand className="c-navbar-brand">
-                    <a href="#home">
-                        <img src="https://cdn2.iconfinder.com/data/icons/bold-outline-v1/512/camera_cine_cinema_film-512.png" alt="" />
-                    </a>
-                </Navbar.Brand>
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home" active={currentPath === "/" || currentPath === "/home"}>Home</Nav.Link>
-                    <Nav.Link href="#actors" active={currentPath === "/actors"}>Actors</Nav.Link>
-                    <Nav.Link href="#movies" active={currentPath.includes("movies")}>Movies</Nav.Link>
-                </Nav>
-            </Navbar>
-        </Container>
+        <Navbar className="c-navbar">
+
+            <Nav className="mr-auto">
+                <Nav.Link href="#home" active={currentPath === "/" || currentPath === "/home"}><img src="https://cdn3.iconfinder.com/data/icons/eziconic-v1-0/256/01.png" alt="image" /> Home </Nav.Link>
+                <Nav.Link href="#actors" active={currentPath === "/actors"}><img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/chaplin_comedy_actor_man-256.png" alt="image" /> Actors</Nav.Link>
+                <Nav.Link href="#movies" active={currentPath.includes("movies")}><img src="https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-94-256.png" alt="image" /> Movies</Nav.Link>
+            </Nav>
+
+        </Navbar>
+
+
+
     )
 }

@@ -1,7 +1,9 @@
 import React from 'react'
 import ActorCard from '../ActorCard/ActorCard';
 import './Actors.css'
+
 export default function Actors({ filterBy, sortBy, actors }) {
+
     let actorsCards;
     if (actors) {
         if (filterBy) {

@@ -7,7 +7,7 @@ export default function Movies({ movies }) {
         moviesCards = movies.map((movie, index) => <MovieCard key={index} movie={movie}></MovieCard>);
     }
     return (
-        <div>
+        <div className="c-movies">
             {moviesCards}
         </div>
     )

@@ -2,20 +2,28 @@
 .p-home{
     display: flex;
     flex-direction: column;
-    color:white;
+    /* color:white; */
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 20px 0;
+    color: #032541;
+
 }
 .p-home>h6{
-    width: 50%;
+    color: #032541;
+    width: 40%;
+    text-align: justify !important;
+}
+.p-home h4{
+    text-align: center ;
 }
 .p-home > .carousel{
-    width: 50% !important;
+    width: 40% !important;
+    color: black;
+    border: solid 1px #032541;
 }
 .carousel-item>img{
-    width: 50%;
-    height: 50%;
+    width: 100%;
 } 

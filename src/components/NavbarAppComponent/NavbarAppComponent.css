@@ -1,6 +1,32 @@
-.c-navbar-brand>a>img{
-    width: 10%;
-}
 .c-navbar{
     padding-top: 10px;
 } 
+
+.c-navbar-brand>a >img{
+    width: 50px;
+}
+Nav.Link> img{
+    width: 50px;
+
+}
+
+.navbar-nav >a >img{
+    width: 50px;
+}
+.mr-auto > a{
+    margin-right: 20px;
+}
+
+ nav {
+     
+    background-color: #032541;
+    color: white;
+}
+ .navbar>.mr-auto> a{
+    color: white !important;
+    font-size: 1.25rem;
+}
+.active{
+    font-weight: 600;
+    border: 1px solid;
+}

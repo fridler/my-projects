@@ -74,7 +74,7 @@ function MoviesPage() {
     }
 
     return (
-        <Container>
+        <Container className="p-movie">
             <h1 className="p-title">Movies</h1>
             <SearchBox
                 placeHolder="Search Movie..."

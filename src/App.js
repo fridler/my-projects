@@ -6,10 +6,11 @@ import HomePage from "./pages/HomePage/HomePage";
 import ActorsPage from "./pages/ActorsPage/ActorsPage";
 import MoviesPage from "./pages/MoviesPage/MoviesPage";
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
       <HashRouter>
         <NavbarAppComponent />
         <Switch>
@@ -21,7 +22,7 @@ function App() {
           <Route path="/"><NotFoundPage /></Route>
         </Switch>
       </HashRouter>
-    </div>
+    </Container>
   );
 }
 
