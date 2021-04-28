@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import HeaderActorsPage from '../../components/HeaderActorsPage/HeaderActorsPage'
+import HeaderActorsPage from '../../components/MoviesAndActors/HeaderActorsPage/HeaderActorsPage'
 import { Container } from 'react-bootstrap'
-import Actors from '../../components/Actors/Actors';
-import SearchBox from '../../components/SearchBox/SearchBox';
+import Actors from '../../components/MoviesAndActors/Actors/Actors';
+import SearchBox from '../../components/MoviesAndActors/SearchBox/SearchBox';
 import './ActorsPage.css'
 import axios from 'axios';
 import ActorModel from '../../model/ActorModel';

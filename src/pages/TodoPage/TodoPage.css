@@ -1,0 +1,61 @@
+
+.p-todos{
+    font-family: 'Oswald', sans-serif;
+    
+  }
+  .todo-form{
+    padding-top: 30px !important;
+  }
+
+  .form-control{
+    font-size: 1.3rem !important;
+}
+button>img{
+  width: 32px;
+}
+.delete-todoItem-btn{
+  height: 26px ;
+}
+  .header-todo{
+    text-align: center;
+    padding-top: 20px;
+    color: #032541;
+
+  }
+  .button-filter{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+  }
+  
+  .button-filter.marked{
+    font-size: 1.2em;
+    color: #032541;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .bottom-row{
+    padding-top: 20px;
+    position: relative;
+  }
+  .button-container{
+    position: absolute;
+    right: 20px;
+  }
+  .open-todos{
+    position: absolute;
+    left: 20px;
+    padding: 10px;
+  }
+  
+  .modal-delete-button{
+    /* background-image: linear-gradient(white,rgb(173, 226, 189),rgb(120,200,200),white); */
+    color: black;
+    border: transparent;
+  }
+  .delete-modal{
+    font-family: 'Oswald', sans-serif;
+  }
+  

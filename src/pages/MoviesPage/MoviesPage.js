@@ -2,8 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Container, Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router';
-import Movies from '../../components/Movies/Movies';
-import SearchBox from '../../components/SearchBox/SearchBox';
+import Movies from '../../components/MoviesAndActors/Movies/Movies';
+import SearchBox from '../../components/MoviesAndActors/SearchBox/SearchBox';
 import MovieModel from '../../model/MovieModel';
 import './MoviesPage.css';
 

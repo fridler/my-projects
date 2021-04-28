@@ -7,6 +7,7 @@ import ActorsPage from "./pages/ActorsPage/ActorsPage";
 import MoviesPage from "./pages/MoviesPage/MoviesPage";
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import { Container } from 'react-bootstrap';
+import TodoPage from './pages/TodoPage/TodoPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <NavbarAppComponent />
         <Switch>
           <Route exact path="/actors"><ActorsPage /></Route>
+          <Route exact path="/todo"><TodoPage /></Route>
           <Route exact path="/movies"><MoviesPage /></Route>
           <Route exact path="/actor/:actorId/movies"><MoviesPage /></Route>
           <Route exact path="/home"><HomePage /></Route>
