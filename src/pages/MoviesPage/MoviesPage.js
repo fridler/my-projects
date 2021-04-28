@@ -78,7 +78,7 @@ function MoviesPage() {
         <Container className="p-movie">
             <h1 className="p-title">Movies</h1>
             <SearchBox
-                placeHolder="Search Movie..."
+                placeHolder="Movie Name..."
                 searchText={searchText}
                 onSearchChange={handleSearchChange}
                 results={results.map(result => result.title)}

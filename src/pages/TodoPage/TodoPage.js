@@ -80,17 +80,12 @@ function TodoPage() {
             }
             <Modal show={showModal} onHide={handleClose} className="delete-modal">
                 <ModalHeader closeButton>
-                    <ModalTitle>Attention Please!</ModalTitle>
+                    <ModalTitle>Remove the To-Do?</ModalTitle>
                 </ModalHeader>
-                <ModalBody>you going to remove a open todo, are you sure?</ModalBody>
+                <ModalBody>You going to remove a open todo, are you sure?</ModalBody>
                 <ModalFooter>
-                    <Button className="modal-delete-button" onClick={handleClose}>
-                        No, Don't delete! <img src="https://www.flaticon.com/svg/vstatic/svg/3770/3770558.svg?token=exp=1619614203~hmac=69a56551659af169219407c7bde1882b" alt="" />
-                    </Button>
-                    <img onClick={handleCloseAndDelete} src="https://www.flaticon.com/svg/vstatic/svg/3770/3770558.svg?token=exp=1619614203~hmac=69a56551659af169219407c7bde1882b" alt="" />
-                    <Button className="modal-delete-button" onClick={handleCloseAndDelete}>
-                        Yes, Delete
-          </Button>
+                    <Button className="modal-delete-button" onClick={handleClose}>No, Don't delete!</Button>
+                    <Button className="modal-delete-button" onClick={handleCloseAndDelete}>Yes, Delete</Button>
                 </ModalFooter>
             </Modal>
         </Container>

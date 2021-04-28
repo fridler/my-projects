@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Button, ButtonGroup, ButtonToolbar, Form, FormControl, InputGroup } from "react-bootstrap";
 import './NewTodoInput.css';
 
 export default function NewTodoInput(props) {
@@ -16,7 +16,15 @@ export default function NewTodoInput(props) {
     }
     return (
         <Form className="todo-form" onSubmit={(e) => handleSubmit(e, props)}>
-            <Form.Control type="text" placeholder="What's next?" value={newTodo} onChange={(e) => handleChangeNewTodo(e)} />
+            <InputGroup>
+                <InputGroup.Prepend>
+                    <InputGroup.Text>Add:</InputGroup.Text>
+                </InputGroup.Prepend>
+                <FormControl type="text" placeholder="What do you need to do?" value={newTodo} onChange={(e) => handleChangeNewTodo(e)} />
+            </InputGroup>
         </Form>
+
+
+
     )
 }

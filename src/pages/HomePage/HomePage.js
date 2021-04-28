@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Container, Image, Carousel, Spinner } from "react-bootstrap";
+import { Container, Image, Carousel } from "react-bootstrap";
 import './HomePage.css';
 
 export default function HomePage() {

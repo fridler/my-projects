@@ -30,3 +30,7 @@ Nav.Link> img{
     font-weight: 600;
     border: 1px solid;
 }
+
+.navbar-nav >a:hover{
+    font-weight: 600;
+}

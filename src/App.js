@@ -8,6 +8,8 @@ import MoviesPage from "./pages/MoviesPage/MoviesPage";
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import { Container } from 'react-bootstrap';
 import TodoPage from './pages/TodoPage/TodoPage';
+import BreedsPage from './pages/BreedsPage/BreedsPage';
+import BreedPage from './pages/BreedPage/BreedPage';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route exact path="/todo"><TodoPage /></Route>
           <Route exact path="/movies"><MoviesPage /></Route>
           <Route exact path="/actor/:actorId/movies"><MoviesPage /></Route>
+          <Route exact path="/breeds"><BreedsPage /></Route>
+          <Route exact path="/breeds/:breed"><BreedPage /></Route>
           <Route exact path="/home"><HomePage /></Route>
           <Route exact path="/"><HomePage /></Route>
           <Route path="/"><NotFoundPage /></Route>

@@ -1,0 +1,21 @@
+.c-breedcard {
+    padding: 3px;
+    margin: 5px;
+    min-width: 100px;
+}
+
+
+.c-breedcard > .title{
+    display: flex; 
+    justify-content: center;
+}
+
+.c-breedcard > .title >a{
+    color: #032541  ;
+
+}
+
+.c-breedcard > .title >a:hover{
+    font-weight: 600;
+
+}

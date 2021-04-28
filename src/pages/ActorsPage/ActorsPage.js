@@ -75,7 +75,7 @@ export default function ActorsPage() {
         <Container>
             <h1 className="p-actors">Actors</h1>
             <SearchBox
-                placeHolder="Search Actor..."
+                placeHolder="Actor Name..."
                 searchText={searchText}
                 onSearchChange={handleSearchChange}
                 results={results.map(result => result.name)}
