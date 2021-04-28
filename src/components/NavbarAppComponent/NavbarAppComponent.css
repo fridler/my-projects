@@ -34,3 +34,18 @@ Nav.Link> img{
 .navbar-nav >a:hover{
     font-weight: 600;
 }
+
+@media (max-width: 750px) {
+    
+    .navbar-nav >a >img{
+        width: 30px;
+    }
+    .mr-auto > a{
+        margin-right: 0;
+    }
+    .navbar>.mr-auto> a{
+        color: white !important;
+        font-size: 0.75rem;
+    }
+
+    }
