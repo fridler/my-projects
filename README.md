@@ -1,7 +1,7 @@
 # My-Projects
--movie application
--
--
+- Movies/Actors 
+- To-Do
+- Dog Breeds
 
 # Getting Started with Create React App
 
